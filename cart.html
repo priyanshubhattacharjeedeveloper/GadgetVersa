@@ -1,0 +1,199 @@
+<!------------------html code-------------------->
+<!DOCTYPE html>
+<html lang="en">
+<!--------------------html head code-------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!---------- font awsome link---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----------css link---------->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!----------title---------->
+    <title>GadgetVersa</title>
+</head>
+<!--------------------html body code------------------>
+
+<body>
+    <!--------------------header-------------------->
+     <header class="header section" id="Header">
+    <!----------nav-section---------->
+    <nav class="nav-section" id="">
+      <div class="nav-container container" id="">
+        <!-- <div><a href="#"><img src="./images/E-world-logo.png" alt="E World" class="logo"id=""></a></div> -->
+        <div><a href="#" class="logo" id="">Gadget<span>Versa</span></a></div>
+        <div class="nav-bar" id="">
+           
+          <ul class="nav-list" id="">
+            <li class="nav-list-item" id=""><a href="./index.html" class="nav-link active" id="">Home</a></li>
+            <li class="nav-list-item" id=""><a href="./about.html" class="nav-link" id="">About</a></li>
+            <li class="nav-list-item" id=""><a href="./shop.html" class="nav-link" id="">Shop</a></li>
+            <li class="nav-list-item" id=""><a href="./blog.html" class="nav-link" id="">Blog</a></li>
+            <li class="nav-list-item" id=""><a href="./contact.html" class="nav-link" id="">Contact</a></li>
+          </ul>
+          <div class="action-bar" id="">
+            <select id="currency-selector">
+                <option value="INR">India (₹)</option>
+                <option value="USD">USA ($)</option>
+                <option value="EUR">Europe (€)</option>
+                <option value="GBP">UK (£)</option>
+            </select>
+            <div class="icon" id="wish-list"><i class="fa-regular fa-heart"></i></div>
+            <div class="icon" id="cart"><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div class="icon" id="menu"><i class="fa-solid fa-bars"></i></div>
+            <div class="icon" id="close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!--------------------main-------------------->
+    <main class="main" id="Main">
+        <!---------- cart-hero-section---------->
+        <section class="home section " id="Home">
+            <div class="cart-home-container home-container" id="">
+                <div class="cart-home-container-containt">
+                    <h2>#addToCart</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+        </section>
+        <section class="add-cart-section section"id="">
+            <div class="add-cart-container container" id="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Remove</td>
+                            <td>Image</td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                            <td><img src="./images/products/product1.png" alt=""></td>
+                            <td>Boat basehead 550</td>
+                            <td>$78.00</td>
+                            <td><input type="number" name="" value="1"></td>
+                            <td>$78.00</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                            <td><img src="./images/products/product2.png" alt=""></td>
+                            <td>Boat basehead 550</td>
+                            <td>$78.00</td>
+                            <td><input type="number" name="" value="1"></td>
+                            <td>$78.00</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                            <td><img src="./images/products/product3.png" alt=""></td>
+                            <td>Boat basehead 550</td>
+                            <td>$78.00</td>
+                            <td><input type="number" name="" value="1"></td>
+                            <td>$78.00</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                            <td><img src="./images/products/product4.png" alt=""></td>
+                            <td>Boat basehead 550</td>
+                            <td>$78.00</td>
+                            <td><input type="number" name="" value="1"></td>
+                            <td>$78.00</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+       <section class=" coupon-section section"id="">
+            <div class="coupon-container container" id="">
+                <div class="apply" id="">
+                    <h3>Apply coupon</h3>
+                    <input type="text" placeholder="Enter Your Coupon Code">
+                    <button class="Apply">Apply</button>
+                </div>
+                <div class="Subtotal" id="">
+                    <h3>Cart tatal</h3>
+                    <table>
+                        <tr>
+                            <td>cart sub tatal</td>
+                            <td>$ 335.00</td>
+                        </tr> 
+                        <tr>
+                            <td>shipping</td>
+                            <td>free</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>$ 335.00</strong></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <!---------------------footer---------------------->
+    <footer class="footer section" id="">
+        <div><a href="#" class="logo footer-logo" id="">Gadget<span>Versa</span></a></div>
+        <div class="footer-container container" id="">
+            <div class="footer-box" id="">
+                <h4>Contact Us</h4>
+                <p>Address:<strong> kolkata Rajpur-sonerpur-700150</strong></p>
+                <p>Mob No: <strong>95304-6XXXX</strong></p>
+                <h4>follow us</h4>
+                <div class="follow" id="">
+                    <a href="" class="social-media" id=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href="" class="social-media" id=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="social-media" id=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" class="social-media" id=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" class="social-media" id=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-box" id="">
+                <h4>About us </h4>
+                <a href="#" class="link" id="">About</a>
+                <a href="#" class="link" id="">Delivery Information</a>
+                <a href="#" class="link" id="">Privacy Policy</a>
+                <a href="#" class="link" id="">Term & Condition</a>
+                <a href="#" class="link" id="">Contact Us</a>
+
+            </div>
+            <div class="footer-box" id="">
+                <h4>My account</h4>
+                <a href="#" class="link" id="">Sign In</a>
+                <a href="#" class="link" id="">view Cart</a>
+                <a href="#" class="link" id="">My Wishlist</a>
+                <a href="#" class="link" id="">Track Order</a>
+                <a href="#" class="link" id="">Help</a>
+            </div>
+            <div class="footer-box" id="">
+                <h4>Install App</h4>
+                <p>From App store or Google store</p>
+                <div class="app-images-container" id="">
+                    <img src="./images/banner-images/app-store.jpg" alt="" class="app-image" id="">
+                    <img src="./images/banner-images/googlePay-store.jpg" alt="" class="app-image" id="">
+                </div>
+                <p>Secured Payment Geteways</p>
+                <img src="./images/banner-images/payment-banner.png" alt="" class="payment-image">
+            </div>
+        </div>
+        <div class="copy-right " id="">
+            <p><strong>&copy;</strong> 2026 Gadge Versa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./javascipt/script.js"></script>
+</body>
+
+</html>
