@@ -1259,7 +1259,7 @@ body {
 
 }
 .footer-logo {
-    margin-left: 9%;
+    margin-left: 5.5%;
     font-size: var(--fs-xlg);
 }
 .footer-logo span {
@@ -1381,7 +1381,7 @@ body {
 }
 @media (max-width: 768px) {
     .footer-logo {
-    margin-left: 9%;
+    margin-left: 5.5%;
     font-size: var(--fs-lg);
 }
 .footer-logo span {
@@ -1950,6 +1950,13 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     padding: 12px 30px;
+}
+/* form error  */
+.error{
+    color:red;
+    font-size:0.8rem;
+    display:block;
+    margin-bottom:10px;
 }
 .facalty-member{
     /* background-color: yellow; */

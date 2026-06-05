@@ -1,4 +1,4 @@
-// alert("welcome");
+// Mobile menu 
 let menu = document.querySelector("#menu");
 let wishList = document.querySelector("#wish-list");
 let cart = document.querySelector("#cart");
@@ -27,7 +27,7 @@ close.addEventListener("click", function(){
     navList.classList.remove("active");
 });
 
-
+// Price change as per contry 
 
 // Currency selector
 let currencySelector = document.querySelector("#currency-selector");
@@ -76,7 +76,7 @@ function updatePrices(currency) {
 
 
 
-
+// Product image gallery 
 let bigImage = document.querySelector(".big-image");
 let smallImages = document.querySelectorAll(".small-image");
 
@@ -86,3 +86,65 @@ smallImages.forEach(function(img){
         bigImage.src = img.src;
     });
 })
+
+
+
+
+
+// Form validation 
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Clear previous errors
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("phoneError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("messageError").textContent = "";
+
+    // Name Validation
+    if (name === "") {
+        document.getElementById("nameError").textContent =
+            "Name is required";
+        isValid = false;
+    }
+
+    // Phone Validation
+    const phoneRegex = /^[6-9]\d{9}$/;
+
+    if (!phoneRegex.test(phone)) {
+        document.getElementById("phoneError").textContent =
+            "Enter a valid 10-digit mobile number";
+        isValid = false;
+    }
+
+    // Email Validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        document.getElementById("emailError").textContent =
+            "Enter a valid email address";
+        isValid = false;
+    }
+
+    // Message Validation
+    if (message.length < 10) {
+        document.getElementById("messageError").textContent =
+            "Message must be at least 10 characters";
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Form submitted successfully!");
+        form.reset();
+    }
+});
